@@ -6,23 +6,23 @@ const BookItem = (props) => {
 
   return (
     <div className="main-container">
-      <div>
+      <div style={{width:"500px", height:"500px"}}>
         {BooksArray.map((bookinfo, index) => {
-        return (
-          <div>
-               {index % 2  === 0 && <Book bookinfo={bookinfo} /> }
-          </div>
-        );
-      })}
-        </div>
-      <div>
-      {BooksArray.map((bookinfo, index) => {
-        return (
-          <div>
-               {index % 2  !== 0 && <Book bookinfo={bookinfo} /> }
-          </div>
-        );
-      })}
+            return (
+            <div>
+                {index % 2  === 0 && <Book bookinfo={bookinfo} /> }
+            </div>
+            );
+        })}
+      </div>
+      <div style={{width:"500px", height:"500px"}}>
+        {BooksArray.map((bookinfo, index) => {
+            return (
+            <div>
+                {index % 2  !== 0 && <Book bookinfo={bookinfo} /> }
+            </div>
+            );
+        })}
       </div>
     </div>
   );

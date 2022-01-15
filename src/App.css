@@ -13,3 +13,24 @@
   flex-direction: row;
   justify-content: center;
 }
+
+.book-card {
+  border: 1px solid #ddd;
+  padding: 6px;
+}
+
+.zg-bdg-body {
+  height: 25px;
+  float: left!important;
+  margin-bottom: 22px;
+  text-align: left!important;
+}
+.zg-bdg-text {
+  background-color: #c45500;
+}
+
+.star-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
